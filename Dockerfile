@@ -5,7 +5,7 @@ FROM 32bit/debian:jessie
 MAINTAINER Min-Yen Kan <knmnyn@hotmail.com>
 
 RUN apt-get update
-RUN apt-get install -y g++ make libexpat1-dev perl ruby
+RUN apt-get install -y --force-yes g++ make libexpat1-dev perl ruby
 
 RUN cpan install XML::Twig
 RUN cpan install XML::Writer
